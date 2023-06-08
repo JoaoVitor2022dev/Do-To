@@ -1,7 +1,7 @@
 
 # To Do - TypeScript
 
-- 
+
 Site de lista de tarefas, feito em Typescript
 
 criar novas atividades ou tarefas
