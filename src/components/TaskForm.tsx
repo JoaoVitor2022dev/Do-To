@@ -25,14 +25,14 @@ const TaskForm = ({ btnText, taskList, setTaskList }: Props) => {
 
      const id = Math.floor(Math.random() * 1000)
 
-     const newTask: ITask = { id, difficulty, title }
+     const newTask: ITask = { id, difficulty, title }; 
 
       setTaskList!([...taskList, newTask])
-     
-      setTitle("");
-      setDifficulty(0);
 
-      console.log(taskList);
+      console.log(setTaskList);
+      
+     
+      setDifficulty(0);
       
    } 
 
@@ -58,7 +58,7 @@ const TaskForm = ({ btnText, taskList, setTaskList }: Props) => {
            <div className={styles.inputContainer}>
               <label htmlFor="difficulty">Dificuldade:</label> 
               <input type="text" 
-              name="title" 
+              name="difficulty" 
               placeholder="Dificuldade da tarefa"
               onChange={handleChange}
               value={difficulty}

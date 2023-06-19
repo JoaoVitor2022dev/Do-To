@@ -17,6 +17,8 @@ function App() {
 
   const [taskList, setTaskList] = useState<ITask[]>([]); 
 
+  console.log(taskList);
+  
 
   return (
     <div className="App">
@@ -28,7 +30,7 @@ function App() {
             </div>
             <div className="lista">
                <h2>Suas tarefas:</h2>
-              <TaskList/>
+              <TaskList taskList={taskList} />
             </div>
         </main>
         <Footer/>
